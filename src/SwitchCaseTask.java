@@ -1,18 +1,45 @@
 public class SwitchCaseTask {
     public static void main(String[] args) {
-        String months = "Февраль";
-        String currentMonths = "Февраль";
+        String month = "Сентябрь";
 
-        if(months.equals(currentMonths)){
+        if (month.equals("Декабрь") || month.equals("Январь") || month.equals("Февраль")) {
+            System.out.println("Зима");
+        } else if (month.equals("Март") || month.equals("Апрель") || month.equals("Май")) {
+            System.out.println("Весна");
+        } else if (month.equals("Июнь") || month.equals("Июль") || month.equals("Август")) {
+            System.out.println("Лето");
+        } else if (month.equals("Сентябрь") || month.equals("Октябрь") || month.equals("Ноябрь")) {
+            System.out.println("Осень");
+        } else {
+            System.out.println("Несуществующее время года");
+        }
+
+        month = "Июнь";
+
+        switch (month) {
+            case "Декабрь":
+            case "Январь":
+            case "Февраль":
                 System.out.println("Зима");
-            } else if (months == "Февраль") {
-                System.out.println("Зима");
-            } else if (months == "Декабрь") {
-                System.out.println("Зима");
-            } else if (months == "Апрель") {
+                break;
+            case "Март":
+            case "Апрель":
+            case "Май":
                 System.out.println("Весна");
-            } else {
-            System.out.println("Нет такого месяца");
+                break;
+            case "Июнь":
+            case "Июль":
+            case "Август":
+                System.out.println("Лето");
+                break;
+            case "Сентябрь":
+            case "Октябрь":
+            case "Ноябрь":
+                System.out.println("Осень");
+                break;
+            default:
+                System.out.println("Несуществующее время года");
+                break;
         }
     }
 }
