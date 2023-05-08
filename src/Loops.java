@@ -47,5 +47,8 @@ public class Loops {
         for(int i : secondArray) {
             System.out.println(i);
         }
+
+
+
     }
 }

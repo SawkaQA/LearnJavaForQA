@@ -1,26 +1,7 @@
+import java.util.GregorianCalendar;
+
 public class Main {
     public static void main(String[] args) {
-        Box box = new Box();
-        box.height = 10.2;
-        box.length = 15;
-        box.weigth = 11.3;
-
-        Box box2 = new Box();
-        box2.height = 5;
-        box2.length = 5;
-        box2.weigth = 5;
-
-        Box box3 = new Box();
-        box3.height = 10;
-        box3.length = 10;
-        box3.weigth = 10;
-
-//        double vol1 = box.volume();
-//        double vol2 = box2.volume();
-//
-//        System.out.println("Объем 1 = " + vol1 + " \nОбъем 2 = " + vol2);
-
-//        System.out.println("Объем 1 коробки = " + volume + "\nОбъем 2 коробки = " + volume2 + "\nОбъем 3 коробки = " + volume3);
 
         Human person1 = new Human();
         person1.name = "Vita";
@@ -60,20 +41,76 @@ public class Main {
         for (int i = 0; i < person.length; i++) {
             avgAge += person[i].age;
         }
-//        System.out.println(avgAge / (double) person.length);
-
-//        System.out.println(averageAge);
-
 
         Dogs dog1 = new Dogs();
         dog1.name = "Sharik";
         dog1.breed = "Dvornayaga";
         dog1.speed = 3;
 
-        String dogInfo = dog1.info();
-        System.out.println(dogInfo);
+//        String dogInfo = dog1.info();
+//        System.out.println(dogInfo);
+//
+//        dog1.run();
 
-        dog1.run();
+//        Box boxBox = new Box();
+//        boxBox.setDimens(15, 15, 15);
+//        System.out.println(boxBox.volume());
+
+        Rect rect = new Rect();
+//
+//        rect.getParams(10, 10);
+//        rect.getPerimeter();
+//        rect.getSquare();
+//
+////        System.out.println("Периметр = " + rect.getPerimeter() + "\nПлощадь = " + rect.getSquare());
+//        Box box9 = new Box(30, 30, 30);
+//        System.out.println(box9.volume());
+//        Box box10 = new Box(10, 15, 20);
+//        System.out.println(box10.volume());
+//        Employee employer = new Employee("Иван", "Разработчик", 80000);
+//
+//        String info = employer.getInfo(12);
+//
+//        System.out.println(info);
+
+
+//        double res = Test.multi(5.666, 5.56);
+//
+//        System.out.println(res);
+
+        Box boxx = new Box(10);
+        Box boxx2 = new Box(15, 20, 25);
+        Box boxx3 = new Box();
+//
+        int res = boxx.compare(boxx2);
+
+        switch(res) {
+            case -1:
+                System.out.println("Наша коробка меньше");
+                break;
+            case 1:
+                System.out.println("Наша коробка больше");
+                break;
+            case 0:
+                System.out.println("Они равны");
+                break;
+        }
+
+
+//        boxx.showVolume();
+//        boxx2.showVolume();
+//        boxx3.showVolume();
+
+//        Monster monster = new Monster();
+//        Monster monster1 = new Monster(10);
+//        Monster monster2 = new Monster(5,5);
+//        Monster monster3 = new Monster(10,10,10);
+//
+//
+//        monster.voice();
+//        monster1.voice(3);
+//        monster2.voice(5, "Privet");
+//        monster3.voice(2);
 
     }
 }
